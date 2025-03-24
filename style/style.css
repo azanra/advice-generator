@@ -18,8 +18,20 @@
 
 body {
   font-family: "manrope", var(--system-ui);
+  height: 100vh;
+  background-color: var(--Dark-Blue);
+}
+
+.slipContainer {
+  background-color: var(--Dark-Grayish-Blue);
+  color: white;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+body,
+.slipContainer > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
