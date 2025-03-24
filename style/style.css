@@ -1,7 +1,21 @@
+@font-face {
+  font-family: "manrope";
+  src: url("../font/manrope/Manrope-Regular.woff2") format("woff2"),
+    url("../font/manrope/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --Grayish-Blue: hsl(217, 19%, 38%);
   --Dark-Grayish-Blue: hsl(217, 19%, 24%);
   --Dark-Blue: hsl(218, 23%, 16%);
   --Light-Cyan: hsl(193, 38%, 86%);
   --Neon-Green: hsl(150, 100%, 66%);
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  font-family: "manrope", var(--system-ui);
 }
