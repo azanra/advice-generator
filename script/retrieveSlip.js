@@ -13,7 +13,7 @@ export default class RetrieveSlip {
       })
       .then((data) => {
         this.updateText(this.slipId, data.slip.id);
-        this.updateText(this.advice, data.slip.advice);
+        this.updateText(this.advice, `"${data.slip.advice}"`);
       })
       .catch((error) => {
         console.log(error);
